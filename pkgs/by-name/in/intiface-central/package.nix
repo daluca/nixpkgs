@@ -65,8 +65,8 @@ let
   buttplug_dart = fetchFromGitHub {
     owner = "buttplugio";
     repo = "buttplug_dart";
-    tag = "v1.0.0";
-    hash = "sha256-nm9TdEL9+80hCbaPnpAJTQ0w1t40vWYcxyilQTwvEBU=";
+    tag = "v1.0.1";
+    hash = "sha256-WbYcH9AIPpScvwS6Bg2Pu7RxZMOTBInhzId9IPxJMjs=";
   };
 
   buttplug = fetchFromGitHub {
@@ -84,8 +84,6 @@ flutter347.buildFlutterApplication {
   ];
 
   pubspecLock = lib.importJSON ./pubspec.lock.json;
-
-  gitHashes.buttplug = "sha256-nm9TdEL9+80hCbaPnpAJTQ0w1t40vWYcxyilQTwvEBU=";
 
   cargoDeps = rustPlatform.fetchCargoVendor {
     inherit pname version src;
@@ -174,7 +172,7 @@ flutter347.buildFlutterApplication {
     description = "Intiface Central (Buttplug Frontend) Application for Desktop";
     homepage = "https://intiface.com/";
     license = lib.licenses.gpl3Only;
-    maintainers = with lib.maintainers; [ _999eagle ];
+    maintainers = with lib.maintainers; [ daluca ];
     platforms = lib.platforms.linux;
   };
 }
