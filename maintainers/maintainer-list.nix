@@ -6369,6 +6369,13 @@
     name = "Dov Alperin";
     keys = [ { fingerprint = "4EED 5096 B925 86FA 1101  6673 7F2C 07B9 1B52 BB61"; } ];
   };
+  daluca = {
+    email = "lucas@slebos.nz";
+    github = "daluca";
+    githubId = 7934122;
+    name = "Lucas Slebos";
+    keys = [ { fingerprint = "C4C6 EC5D C2F3 69D7 CCF8  EE1D 7626 A2AB 2375 7525"; } ];
+  };
   damhiya = {
     name = "SoonWon Moon";
     email = "damhiya@gmail.com";
